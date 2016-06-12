@@ -17,8 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createUI];
 }
-
+- (void)createUI{
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageV.image = [UIImage imageNamed:@"picture_two.jpg"];
+    [self.view addSubview:imageV];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -15,6 +15,11 @@
 		0483F05C1CFC679C0093CF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0483F05A1CFC679C0093CF2D /* LaunchScreen.storyboard */; };
 		0483F0671CFC679C0093CF2D /* TransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483F0661CFC679C0093CF2D /* TransitionDemoTests.m */; };
 		0483F0721CFC679C0093CF2D /* TransitionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483F0711CFC679C0093CF2D /* TransitionDemoUITests.m */; };
+		0483F0851CFC6BAB0093CF2D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483F0841CFC6BAB0093CF2D /* FirstViewController.m */; };
+		0483F0871CFC6BBD0093CF2D /* picture_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0483F0861CFC6BBD0093CF2D /* picture_two.jpg */; };
+		0483F0891CFC6BC60093CF2D /* picture_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0483F0881CFC6BC60093CF2D /* picture_one.jpg */; };
+		0483F08C1CFC6E900093CF2D /* FlipSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483F08B1CFC6E900093CF2D /* FlipSecondViewController.m */; };
+		0483F0911CFC70A00093CF2D /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0483F0901CFC70A00093CF2D /* FlipTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		0483F06D1CFC679C0093CF2D /* TransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0483F0711CFC679C0093CF2D /* TransitionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionDemoUITests.m; sourceTree = "<group>"; };
 		0483F0731CFC679C0093CF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0483F0831CFC6BAB0093CF2D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0483F0841CFC6BAB0093CF2D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0483F0861CFC6BBD0093CF2D /* picture_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture_two.jpg; sourceTree = "<group>"; };
+		0483F0881CFC6BC60093CF2D /* picture_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture_one.jpg; sourceTree = "<group>"; };
+		0483F08A1CFC6E900093CF2D /* FlipSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipSecondViewController.h; sourceTree = "<group>"; };
+		0483F08B1CFC6E900093CF2D /* FlipSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipSecondViewController.m; sourceTree = "<group>"; };
+		0483F08F1CFC70A00093CF2D /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
+		0483F0901CFC70A00093CF2D /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 		0483F04B1CFC679C0093CF2D /* TransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0483F0821CFC6B5F0093CF2D /* Flip */,
 				0483F04F1CFC679C0093CF2D /* AppDelegate.h */,
 				0483F0501CFC679C0093CF2D /* AppDelegate.m */,
 				0483F0521CFC679C0093CF2D /* ViewController.h */,
@@ -117,6 +131,8 @@
 		0483F04C1CFC679C0093CF2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0483F0881CFC6BC60093CF2D /* picture_one.jpg */,
+				0483F0861CFC6BBD0093CF2D /* picture_two.jpg */,
 				0483F04D1CFC679C0093CF2D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +154,35 @@
 				0483F0731CFC679C0093CF2D /* Info.plist */,
 			);
 			path = TransitionDemoUITests;
+			sourceTree = "<group>";
+		};
+		0483F0821CFC6B5F0093CF2D /* Flip */ = {
+			isa = PBXGroup;
+			children = (
+				0483F08D1CFC6F9B0093CF2D /* ViewController */,
+				0483F08E1CFC6FAB0093CF2D /* TransitionModel */,
+			);
+			name = Flip;
+			sourceTree = "<group>";
+		};
+		0483F08D1CFC6F9B0093CF2D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0483F0831CFC6BAB0093CF2D /* FirstViewController.h */,
+				0483F0841CFC6BAB0093CF2D /* FirstViewController.m */,
+				0483F08A1CFC6E900093CF2D /* FlipSecondViewController.h */,
+				0483F08B1CFC6E900093CF2D /* FlipSecondViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0483F08E1CFC6FAB0093CF2D /* TransitionModel */ = {
+			isa = PBXGroup;
+			children = (
+				0483F08F1CFC70A00093CF2D /* FlipTransition.h */,
+				0483F0901CFC70A00093CF2D /* FlipTransition.m */,
+			);
+			name = TransitionModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +288,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0483F0891CFC6BC60093CF2D /* picture_one.jpg in Resources */,
+				0483F0871CFC6BBD0093CF2D /* picture_two.jpg in Resources */,
 				0483F05C1CFC679C0093CF2D /* LaunchScreen.storyboard in Resources */,
 				0483F0591CFC679C0093CF2D /* Assets.xcassets in Resources */,
 				0483F0571CFC679C0093CF2D /* Main.storyboard in Resources */,
@@ -271,8 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0483F0541CFC679C0093CF2D /* ViewController.m in Sources */,
+				0483F08C1CFC6E900093CF2D /* FlipSecondViewController.m in Sources */,
 				0483F0511CFC679C0093CF2D /* AppDelegate.m in Sources */,
 				0483F04E1CFC679C0093CF2D /* main.m in Sources */,
+				0483F0851CFC6BAB0093CF2D /* FirstViewController.m in Sources */,
+				0483F0911CFC70A00093CF2D /* FlipTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
